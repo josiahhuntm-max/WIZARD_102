@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Editor": {
+      "commandName": "Executable",
+      "executablePath": "M:/SteamLibrary/steamapps/common/sbox/sbox-dev.exe",
+      "commandLineArgs": "-project \u0022c:\\users\\yoyo3\\documents\\s\u0026box projects\\wizard_102\\wizard_102.sbproj\u0022"
+    }
+  }
+}

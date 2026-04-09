@@ -1,0 +1,50 @@
+{
+  "RootObject": {
+    "__guid": "25b11a85-3ee0-4fa4-bda7-a6ea12819f67",
+    "__version": 2,
+    "Flags": 0,
+    "Name": "Camera",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0,1",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkFlags": 0,
+    "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "WizardGame.Player.WizardCameraController",
+        "__guid": "d37b9591-fc53-4bce-8de6-d5b98b487c3d",
+        "__enabled": true,
+        "Flags": 0,
+        "Camera": null,
+        "CameraPivot": null,
+        "FirstPersonFov": 90,
+        "FirstPersonHeight": 64,
+        "LookSensitivity": 0.08,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "StartInThirdPerson": true,
+        "ThirdPersonFov": 90,
+        "ThirdPersonLerp": 12,
+        "ThirdPersonOffset": "-130,0,56",
+        "ToggleAction": "View"
+      }
+    ],
+    "Children": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [],
+  "__version": 2
+}

@@ -1,0 +1,429 @@
+{
+  "RootObject": {
+    "__guid": "71a9f75d-4277-4a95-a38f-c9d4e2a3e468",
+    "__version": 2,
+    "Flags": 0,
+    "Name": "player",
+    "Position": "0,0,0",
+    "Rotation": "0,0,0.3356863,0.9419739",
+    "Scale": "1,1,1",
+    "Tags": "",
+    "Enabled": true,
+    "NetworkMode": 2,
+    "NetworkFlags": 0,
+    "NetworkOrphaned": 0,
+    "NetworkTransmit": true,
+    "OwnerTransfer": 1,
+    "Components": [
+      {
+        "__type": "WizardGame.Player.WizardPlayer",
+        "__guid": "389b5e18-b7b0-4317-b8d2-c8941e896ee2",
+        "__enabled": true,
+        "Flags": 0,
+        "AnimationHelper": {
+          "_type": "component",
+          "component_id": "cee7218a-58cc-45d1-9dc7-29cd62bcefbf",
+          "go": "dbbcd640-1102-4e43-ae3e-f317afc7994f",
+          "component_type": "CitizenAnimationHelper"
+        },
+        "BackwardAction": "Backward",
+        "BodyModel": null,
+        "BodyObject": {
+          "_type": "gameobject",
+          "go": "dbbcd640-1102-4e43-ae3e-f317afc7994f"
+        },
+        "BodyRenderer": {
+          "_type": "component",
+          "component_id": "e88e0ec2-2fe4-48f7-94ba-0bcec6300aeb",
+          "go": "dbbcd640-1102-4e43-ae3e-f317afc7994f",
+          "component_type": "SkinnedModelRenderer"
+        },
+        "CameraController": {
+          "_type": "component",
+          "component_id": "5e35da10-6509-48a5-b7d4-1896dfe1c60d",
+          "go": "71a9f75d-4277-4a95-a38f-c9d4e2a3e468",
+          "component_type": "WizardCameraController"
+        },
+        "ForwardAction": "Forward",
+        "JumpAction": "Jump",
+        "LeftAction": "Left",
+        "Movement": {
+          "_type": "component",
+          "component_id": "8e7fa9fc-ae8c-4a7d-9990-b5009a22ac18",
+          "go": "71a9f75d-4277-4a95-a38f-c9d4e2a3e468",
+          "component_type": "WizardMovementController"
+        },
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "RightAction": "Right",
+        "SprintAction": "Run",
+        "WandController": {
+          "_type": "component",
+          "component_id": "2858acda-74d1-4702-a61c-f32daf649711",
+          "go": "71a9f75d-4277-4a95-a38f-c9d4e2a3e468",
+          "component_type": "WizardWandController"
+        }
+      },
+      {
+        "__type": "WizardGame.Player.WizardCameraController",
+        "__guid": "5e35da10-6509-48a5-b7d4-1896dfe1c60d",
+        "__enabled": true,
+        "Flags": 0,
+        "Camera": {
+          "_type": "component",
+          "component_id": "f5ac8462-ace9-43f4-bb73-57d22228ced6",
+          "go": "d1a28a7a-214d-444c-b317-6bf7d32e322f",
+          "component_type": "CameraComponent"
+        },
+        "CameraPivot": {
+          "_type": "gameobject",
+          "go": "6d7c19cb-2152-4c55-a3cf-69b8bac73399"
+        },
+        "FirstPersonFov": 90,
+        "FirstPersonHeight": 64,
+        "LookSensitivity": 1,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "StartInThirdPerson": true,
+        "ThirdPersonFov": 90,
+        "ThirdPersonLerp": 12,
+        "ThirdPersonOffset": "-80.23997,20.11002,57.63997",
+        "ToggleAction": "View"
+      },
+      {
+        "__type": "WizardGame.Player.WizardMovementController",
+        "__guid": "8e7fa9fc-ae8c-4a7d-9990-b5009a22ac18",
+        "__enabled": true,
+        "Flags": 0,
+        "AirAcceleration": 2,
+        "CharacterController": {
+          "_type": "component",
+          "component_id": "1c8fd9e8-6acd-41ef-895f-0917e77c6d13",
+          "go": "71a9f75d-4277-4a95-a38f-c9d4e2a3e468",
+          "component_type": "CharacterController"
+        },
+        "GroundAcceleration": 10,
+        "GroundFriction": 8,
+        "JumpStrength": 320,
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "SprintSpeed": 280,
+        "WalkSpeed": 180
+      },
+      {
+        "__type": "WizardGame.Player.WizardWandController",
+        "__guid": "2858acda-74d1-4702-a61c-f32daf649711",
+        "__enabled": true,
+        "Flags": 0,
+        "CastPoint": {
+          "_type": "gameobject",
+          "go": "e9ea11d4-e109-461d-9dbc-555f48536695"
+        },
+        "CastPointLocalOffset": "24,0,0",
+        "FirstPersonLocalPosition": "18,8,58",
+        "FirstPersonLocalRotation": "0,100,-8",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "ThirdPersonLocalPosition": "12,8,48",
+        "ThirdPersonLocalRotation": "0,90,0",
+        "WandModel": "models/glow_stick/glow_stick.vmdl",
+        "WandObject": {
+          "_type": "gameobject",
+          "go": "16c5fc78-eed4-496f-9a70-453ca8eb328e"
+        }
+      },
+      {
+        "__type": "Sandbox.CharacterController",
+        "__guid": "1c8fd9e8-6acd-41ef-895f-0917e77c6d13",
+        "__enabled": true,
+        "Flags": 0,
+        "Acceleration": 10,
+        "Bounciness": 0.3,
+        "GroundAngle": 45,
+        "Height": 72,
+        "IgnoreLayers": "",
+        "OnComponentDestroy": null,
+        "OnComponentDisabled": null,
+        "OnComponentEnabled": null,
+        "OnComponentFixedUpdate": null,
+        "OnComponentStart": null,
+        "OnComponentUpdate": null,
+        "Radius": 16,
+        "StepHeight": 18,
+        "UseCollisionRules": false
+      }
+    ],
+    "Children": [
+      {
+        "__guid": "dbbcd640-1102-4e43-ae3e-f317afc7994f",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "WizardBody",
+        "Position": "0,0,0",
+        "Rotation": "0,0,0,1",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.SkinnedModelRenderer",
+            "__guid": "e88e0ec2-2fe4-48f7-94ba-0bcec6300aeb",
+            "__enabled": true,
+            "Flags": 0,
+            "AnimationGraph": null,
+            "BodyGroups": 341,
+            "BoneMergeTarget": null,
+            "CreateAttachments": false,
+            "CreateBoneObjects": false,
+            "LodOverride": null,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Materials": null,
+            "Model": "models/citizen/citizen.vmdl",
+            "Morphs": {},
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Parameters": {
+              "bools": {},
+              "ints": {},
+              "floats": {},
+              "vectors": {},
+              "rotations": {}
+            },
+            "PlaybackRate": 1,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Sequence": {
+              "Name": null,
+              "Looping": true,
+              "Blending": false
+            },
+            "Tint": "1,1,1,1",
+            "UseAnimGraph": true
+          },
+          {
+            "__type": "Sandbox.Citizen.CitizenAnimationHelper",
+            "__guid": "cee7218a-58cc-45d1-9dc7-29cd62bcefbf",
+            "__enabled": true,
+            "Flags": 0,
+            "BodyWeight": 1,
+            "EyeSource": null,
+            "EyesWeight": 1,
+            "HeadWeight": 1,
+            "Height": null,
+            "IkLeftFoot": null,
+            "IkLeftHand": null,
+            "IkRightFoot": null,
+            "IkRightHand": null,
+            "LookAt": null,
+            "LookAtEnabled": false,
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "Target": {
+              "_type": "component",
+              "component_id": "e88e0ec2-2fe4-48f7-94ba-0bcec6300aeb",
+              "go": "dbbcd640-1102-4e43-ae3e-f317afc7994f",
+              "component_type": "SkinnedModelRenderer"
+            }
+          }
+        ],
+        "Children": []
+      },
+      {
+        "__guid": "6d7c19cb-2152-4c55-a3cf-69b8bac73399",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "WizardCameraPivot",
+        "Position": "0,0,63.99998",
+        "Rotation": "-0.0002441457,0.0166974,0.01461819,0.9997537",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [],
+        "Children": [
+          {
+            "__guid": "d1a28a7a-214d-444c-b317-6bf7d32e322f",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "WizardCamera",
+            "Position": "-80.02751,-20.10988,-6.356464",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [
+              {
+                "__type": "Sandbox.CameraComponent",
+                "__guid": "f5ac8462-ace9-43f4-bb73-57d22228ced6",
+                "__enabled": true,
+                "Flags": 0,
+                "BackgroundColor": "0.33333,0.46275,0.52157,1",
+                "ClearFlags": "All",
+                "EnablePostProcessing": true,
+                "FieldOfView": 90,
+                "FovAxis": "Horizontal",
+                "IsMainCamera": true,
+                "OnComponentDestroy": null,
+                "OnComponentDisabled": null,
+                "OnComponentEnabled": null,
+                "OnComponentFixedUpdate": null,
+                "OnComponentStart": null,
+                "OnComponentUpdate": null,
+                "Orthographic": false,
+                "OrthographicHeight": 1204,
+                "PostProcessAnchor": null,
+                "Priority": 1,
+                "RenderExcludeTags": "",
+                "RenderTags": "",
+                "RenderTexture": null,
+                "TargetEye": "None",
+                "Viewport": "0,0,1,1",
+                "ZFar": 10000,
+                "ZNear": 10
+              }
+            ],
+            "Children": []
+          }
+        ]
+      },
+      {
+        "__guid": "16c5fc78-eed4-496f-9a70-453ca8eb328e",
+        "__version": 2,
+        "Flags": 0,
+        "Name": "Wand",
+        "Position": "12,8,48",
+        "Rotation": "0,0,0.7071068,0.7071068",
+        "Scale": "1,1,1",
+        "Tags": "",
+        "Enabled": true,
+        "NetworkMode": 2,
+        "NetworkFlags": 0,
+        "NetworkOrphaned": 0,
+        "NetworkTransmit": true,
+        "OwnerTransfer": 1,
+        "Components": [
+          {
+            "__type": "Sandbox.ModelRenderer",
+            "__guid": "e52ae373-225a-4b25-b919-0c8072c89cb4",
+            "__enabled": true,
+            "Flags": 0,
+            "BodyGroups": 18446744073709551615,
+            "CreateAttachments": false,
+            "LodOverride": null,
+            "MaterialGroup": null,
+            "MaterialOverride": null,
+            "Materials": null,
+            "Model": "models/glow_stick/glow_stick.vmdl",
+            "OnComponentDestroy": null,
+            "OnComponentDisabled": null,
+            "OnComponentEnabled": null,
+            "OnComponentFixedUpdate": null,
+            "OnComponentStart": null,
+            "OnComponentUpdate": null,
+            "RenderOptions": {
+              "GameLayer": true,
+              "OverlayLayer": false,
+              "BloomLayer": false,
+              "AfterUILayer": false
+            },
+            "RenderType": "On",
+            "Tint": "1,1,1,1"
+          }
+        ],
+        "Children": [
+          {
+            "__guid": "e9ea11d4-e109-461d-9dbc-555f48536695",
+            "__version": 2,
+            "Flags": 0,
+            "Name": "WandCastPoint",
+            "Position": "24,0,0",
+            "Rotation": "0,0,0,1",
+            "Scale": "1,1,1",
+            "Tags": "",
+            "Enabled": true,
+            "NetworkMode": 2,
+            "NetworkFlags": 0,
+            "NetworkOrphaned": 0,
+            "NetworkTransmit": true,
+            "OwnerTransfer": 1,
+            "Components": [],
+            "Children": []
+          }
+        ]
+      }
+    ],
+    "__properties": {
+      "NetworkInterpolation": true,
+      "TimeScale": 1,
+      "WantsSystemScene": true,
+      "Metadata": {},
+      "NavMesh": {
+        "Enabled": false,
+        "IncludeStaticBodies": true,
+        "IncludeKeyframedBodies": true,
+        "EditorAutoUpdate": false,
+        "AgentHeight": 64,
+        "AgentRadius": 16,
+        "AgentStepSize": 18,
+        "AgentMaxSlope": 40,
+        "ExcludedBodies": "",
+        "IncludedBodies": "",
+        "CustomBounds": false
+      }
+    },
+    "__variables": []
+  },
+  "ResourceVersion": 2,
+  "ShowInMenu": false,
+  "MenuPath": null,
+  "MenuIcon": null,
+  "DontBreakAsTemplate": false,
+  "__references": [
+    "pxlq.glow_stick#9540"
+  ],
+  "__version": 2
+}
